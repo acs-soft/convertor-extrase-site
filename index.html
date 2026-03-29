@@ -3,10 +3,252 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Convertor Extrase - Coming Soon</title>
+  <meta name="description"
+        content="Importați extrasele bancare din BCR, Banca Transilvania, CEC Bank și Raiffeisen direct în SAGA C.3.0.">
+
+  <!-- Open Graph for WhatsApp/social sharing -->
+  <meta property="og:title"
+        content="Convertor Extrase Bancare">
+  <meta property="og:description"
+        content="Transformați extrasele PDF în fișiere Excel pentru SAGA">
+  <meta property="og:type"
+        content="website">
+  <meta property="og:url"
+        content="https://acs-soft.github.io/convertor-extrase-site/">
+
+  <title>Convertor Extrase Bancare</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
 </head>
+
 <body>
-  <h1>Convertor Extrase</h1>
-  <p>Pagina este in constructie.</p>
+
+  <!-- ============================================================
+       Header / Navigation
+       Sticky nav with product name, section anchors, and download CTA
+       ============================================================ -->
+  <header>
+    <nav class="container">
+      <a href="#" class="nav-brand">Convertor Extrase Bancare</a>
+
+      <div class="nav-links">
+        <a href="#functionalitati">
+          Funcționalități
+        </a>
+
+        <a href="#banci">
+          Bănci acceptate
+        </a>
+
+        <a href="#preturi">
+          Prețuri
+        </a>
+
+        <a href="https://github.com/acs-soft/convertor-extrase-site/releases/latest/download/ConvertorExtrase-Setup.exe"
+           class="nav-cta">
+          Descarcă aplicația
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         Hero Section
+         Two-column layout: text left, screenshots right (desktop)
+         Single column stacked on mobile
+         ============================================================ -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero-content">
+
+          <div class="hero-text">
+            <h1>Transformați extrasele PDF în fișiere Excel pentru SAGA</h1>
+
+            <p class="hero-description">
+              Importați extrasele bancare din BCR, Banca Transilvania,
+              CEC Bank și Raiffeisen direct în SAGA C.3.0 &mdash;
+              simplu, rapid și fără erori.
+            </p>
+
+            <a href="https://github.com/acs-soft/convertor-extrase-site/releases/latest/download/ConvertorExtrase-Setup.exe"
+               class="btn-download">
+              Descarcă gratuit
+            </a>
+
+            <p class="cta-subtext">
+              Windows 10/11 &bull; 7 zile gratuit &bull; ~57 MB
+            </p>
+          </div>
+
+          <div class="hero-screenshots">
+            <img src="images/screenshot-1.webp"
+                 alt="Fereastra principală a aplicației Convertor Extrase Bancare"
+                 class="screenshot"
+                 loading="lazy"
+                 width="600"
+                 height="400">
+
+            <img src="images/screenshot-2.webp"
+                 alt="Procesarea extraselor bancare în Convertor Extrase Bancare"
+                 class="screenshot"
+                 loading="lazy"
+                 width="600"
+                 height="400">
+
+            <img src="images/screenshot-3.webp"
+                 alt="Rezultatele conversiei în format Excel pentru SAGA"
+                 class="screenshot"
+                 loading="lazy"
+                 width="600"
+                 height="400">
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Features Section
+         3-column card grid on desktop, single column on mobile
+         Explains the 3-step workflow: load PDF, convert, import
+         ============================================================ -->
+    <section id="functionalitati" class="section-alt">
+      <div class="container">
+        <h2>Cum funcționează</h2>
+
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <h3>Încărcați extrasele PDF</h3>
+            <p>
+              Trageți fișierele PDF din bancă direct în aplicație.
+              Sunt acceptate extrase de la BCR, Banca Transilvania,
+              CEC Bank și Raiffeisen.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>Conversia automată</h3>
+            <p>
+              Aplicația parsează fiecare tranzacție, verifică soldurile
+              și generează fișierul Excel conform formatului SAGA C.3.0.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <h3>Importați în SAGA</h3>
+            <p>
+              Deschideți fișierul Excel generat și importați-l direct
+              în SAGA. Toate coloanele sunt completate corect &mdash;
+              fără ajustări manuale.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Supported Banks Section
+         Horizontal flex list of 4 bank names (text only, no logos)
+         All four major Romanian banks with digital PDF statements
+         ============================================================ -->
+    <section id="banci">
+      <div class="container">
+        <h2>Bănci acceptate</h2>
+
+        <p class="section-description">
+          Aplicația acceptă extrase de cont în format PDF de la
+          cele mai mari bănci din România.
+        </p>
+
+        <div class="banks-list">
+          <div class="bank-item">
+            BCR
+          </div>
+
+          <div class="bank-item">
+            Banca Transilvania
+          </div>
+
+          <div class="bank-item">
+            CEC Bank
+          </div>
+
+          <div class="bank-item">
+            Raiffeisen
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         Pricing Section
+         Centered pricing card with placeholder price and trial info
+         Price placeholder: user fills in real price before launch
+         ============================================================ -->
+    <section id="preturi" class="section-alt">
+      <div class="container">
+        <h2>Prețuri</h2>
+
+        <div class="pricing-card">
+          <div class="pricing-price">
+            X lei/an
+          </div>
+
+          <p class="pricing-trial">
+            7 zile gratuit &mdash; testați fără obligații
+          </p>
+
+          <ul class="pricing-features">
+            <li>Toate cele 4 bănci incluse</li>
+            <li>Export Excel compatibil SAGA C.3.0</li>
+            <li>Verificare automată a soldurilor</li>
+            <li>Actualizări gratuite pe durata abonamentului</li>
+          </ul>
+
+          <a href="https://github.com/acs-soft/convertor-extrase-site/releases/latest/download/ConvertorExtrase-Setup.exe"
+             class="btn-download">
+            Descarcă și testează gratuit
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       Footer
+       Dark background with company info, contact, and legal links
+       ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-company">
+          <span class="footer-brand">
+            ACS Soft
+          </span>
+          <span class="footer-copyright">
+            &copy; 2026 ACS Soft. Toate drepturile rezervate.
+          </span>
+        </div>
+
+        <div class="footer-links">
+          <a href="mailto:contact@example.com">
+            contact@example.com
+          </a>
+          <a href="#">
+            Termeni și condiții
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
