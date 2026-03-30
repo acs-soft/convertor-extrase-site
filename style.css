@@ -818,7 +818,7 @@ section {
    ============================================================ */
 footer {
   background: var(--concrete-900);
-  padding: 2.5rem 0;
+  padding: 1.2rem 0;
   border-top: 3px solid var(--taxi-yellow);
 }
 
