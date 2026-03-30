@@ -18,234 +18,229 @@
 
   <title>Convertor Extrase Bancare</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico">
 </head>
-
 <body>
 
-  <!-- ============================================================
-       Header / Navigation
-       Sticky nav with product name, section anchors, and download CTA
-       ============================================================ -->
-  <header>
-    <nav class="container">
-      <a href="#" class="nav-brand">Convertor Extrase Bancare</a>
-
+  <!-- ======== NAVIGATION ======== -->
+  <nav>
+    <div class="container">
+      <a href="#" class="logo">Convertor Extrase <span>Bancare</span></a>
       <div class="nav-links">
-        <a href="#functionalitati">
-          Funcționalități
-        </a>
-
-        <a href="#banci">
-          Bănci acceptate
-        </a>
-
-        <a href="#preturi">
-          Prețuri
-        </a>
-
+        <a href="#cum-functioneaza" class="nav-link">Cum funcționează</a>
+        <a href="#instalare" class="nav-link">Instalare</a>
+        <a href="#pret" class="nav-link">Prețuri</a>
         <a href="https://github.com/acs-soft/convertor-extrase-site/releases/latest/download/ConvertorExtrase-Setup.exe"
-           class="nav-cta">
-          Descarcă aplicația
-        </a>
+           class="nav-cta">Descarcă gratuit</a>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
-  <main>
-
-    <!-- ============================================================
-         Hero Section
-         Two-column layout: text left, screenshots right (desktop)
-         Single column stacked on mobile
-         ============================================================ -->
-    <section id="hero" class="hero">
-      <div class="container">
-        <div class="hero-content">
-
-          <div class="hero-text">
-            <h1>Transformați extrasele PDF în fișiere Excel pentru SAGA</h1>
-
-            <p class="hero-description">
-              Importați extrasele bancare din BCR, Banca Transilvania,
-              CEC Bank și Raiffeisen direct în SAGA C.3.0 &mdash;
-              simplu, rapid și fără erori.
-            </p>
-
-            <a href="https://github.com/acs-soft/convertor-extrase-site/releases/latest/download/ConvertorExtrase-Setup.exe"
-               class="btn-download">
-              Descarcă gratuit
-            </a>
-
-            <p class="cta-subtext">
-              Windows 10/11 &bull; 7 zile gratuit &bull; ~57 MB
-            </p>
-          </div>
-
-          <div class="hero-screenshots">
-            <img src="images/screenshot-1.webp"
-                 alt="Fereastra principală a aplicației Convertor Extrase Bancare"
-                 class="screenshot"
-                 loading="lazy"
-                 width="600"
-                 height="400">
-
-            <img src="images/screenshot-2.webp"
-                 alt="Procesarea extraselor bancare în Convertor Extrase Bancare"
-                 class="screenshot"
-                 loading="lazy"
-                 width="600"
-                 height="400">
-
-            <img src="images/screenshot-3.webp"
-                 alt="Rezultatele conversiei în format Excel pentru SAGA"
-                 class="screenshot"
-                 loading="lazy"
-                 width="600"
-                 height="400">
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         Features Section
-         3-column card grid on desktop, single column on mobile
-         Explains the 3-step workflow: load PDF, convert, import
-         ============================================================ -->
-    <section id="functionalitati" class="section-alt">
-      <div class="container">
-        <h2>Cum funcționează</h2>
-
-        <div class="features-grid">
-
-          <div class="feature-card">
-            <h3>Încărcați extrasele PDF</h3>
-            <p>
-              Trageți fișierele PDF din bancă direct în aplicație.
-              Sunt acceptate extrase de la BCR, Banca Transilvania,
-              CEC Bank și Raiffeisen.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <h3>Conversia automată</h3>
-            <p>
-              Aplicația parsează fiecare tranzacție, verifică soldurile
-              și generează fișierul Excel conform formatului SAGA C.3.0.
-            </p>
-          </div>
-
-          <div class="feature-card">
-            <h3>Importați în SAGA</h3>
-            <p>
-              Deschideți fișierul Excel generat și importați-l direct
-              în SAGA. Toate coloanele sunt completate corect &mdash;
-              fără ajustări manuale.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         Supported Banks Section
-         Horizontal flex list of 4 bank names (text only, no logos)
-         All four major Romanian banks with digital PDF statements
-         ============================================================ -->
-    <section id="banci">
-      <div class="container">
-        <h2>Bănci acceptate</h2>
-
-        <p class="section-description">
-          Aplicația acceptă extrase de cont în format PDF de la
-          cele mai mari bănci din România.
-        </p>
-
-        <div class="banks-list">
-          <div class="bank-item">
-            BCR
-          </div>
-
-          <div class="bank-item">
-            Banca Transilvania
-          </div>
-
-          <div class="bank-item">
-            CEC Bank
-          </div>
-
-          <div class="bank-item">
-            Raiffeisen
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         Pricing Section
-         Centered pricing card with placeholder price and trial info
-         Price placeholder: user fills in real price before launch
-         ============================================================ -->
-    <section id="preturi" class="section-alt">
-      <div class="container">
-        <h2>Prețuri</h2>
-
-        <div class="pricing-card">
-          <div class="pricing-price">
-            X lei/an
-          </div>
-
-          <p class="pricing-trial">
-            7 zile gratuit &mdash; testați fără obligații
-          </p>
-
-          <ul class="pricing-features">
-            <li>Toate cele 4 bănci incluse</li>
-            <li>Export Excel compatibil SAGA C.3.0</li>
-            <li>Verificare automată a soldurilor</li>
-            <li>Actualizări gratuite pe durata abonamentului</li>
-          </ul>
-
-          <a href="https://github.com/acs-soft/convertor-extrase-site/releases/latest/download/ConvertorExtrase-Setup.exe"
-             class="btn-download">
-            Descarcă și testează gratuit
+  <!-- ======== HERO ======== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">Software pentru contabili</div>
+        <h1>Transformați extrasele PDF în fișiere <em>Excel</em> pentru SAGA</h1>
+        <p class="hero-desc">Importați extrasele bancare din BCR, Banca Transilvania, CEC Bank și Raiffeisen direct în SAGA C.3.0 &mdash; simplu, rapid și fără erori.</p>
+        <div class="hero-actions">
+          <a href="https://github.com/acs-soft/convertor-extrase-site/releases/latest/download/ConvertorExtrase-Setup.exe" class="btn-primary">
+            <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 12L3 7h3V1h4v6h3L8 12z"/><path d="M14 14H2v-2H0v4h16v-4h-2v2z"/></svg>
+            Descarcă gratuit
           </a>
+          <span class="hero-sub">Windows 10/11 &middot; 7 zile gratuit &middot; ~57 MB</span>
         </div>
       </div>
-    </section>
+      <div class="hero-visual">
+        <img src="images/screenshot-1.webp"
+             alt="Fereastra principală a aplicației Convertor Extrase Bancare"
+             class="hero-screenshot"
+             loading="lazy"
+             width="600"
+             height="400">
+      </div>
+    </div>
+  </section>
 
-  </main>
+  <!-- ======== HOW IT WORKS ======== -->
+  <section class="how-it-works" id="cum-functioneaza">
+    <div class="container-narrow" style="margin-bottom: 3rem;">
+      <span class="section-label">Procesul</span>
+      <h2 class="section-heading">Cum funcționează</h2>
+      <hr class="section-rule">
+    </div>
+    <div class="container">
+      <div class="steps-grid">
+        <div class="step-block">
+          <div class="step-number">01</div>
+          <div class="step-title">Încărcați extrasele PDF</div>
+          <p class="step-desc">Trageți fișierele PDF din BCR, Banca Transilvania, CEC Bank sau Raiffeisen direct în aplicație.</p>
+        </div>
+        <div class="step-block">
+          <div class="step-number">02</div>
+          <div class="step-title">Conversia automată</div>
+          <p class="step-desc">Aplicația detectează banca, extrage tranzacțiile și generează fișierele Excel în formatul SAGA C.3.0.</p>
+        </div>
+        <div class="step-block">
+          <div class="step-number">03</div>
+          <div class="step-title">Importați în SAGA</div>
+          <p class="step-desc">Deschideți fișierele Excel generate și importați-le direct în SAGA &mdash; fără ajustări manuale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- ============================================================
-       Footer
-       Dark background with company info, contact, and legal links
-       ============================================================ -->
+  <!-- ======== SCREENSHOTS ======== -->
+  <section class="screenshots">
+    <div class="container">
+      <span class="section-label">Interfața aplicației</span>
+      <h2 class="section-heading">Simplu și eficient</h2>
+      <hr class="section-rule">
+      <div class="screenshot-grid">
+        <div class="screenshot-card">
+          <img src="images/screenshot-1.webp"
+               alt="Fereastra principală a aplicației Convertor Extrase Bancare"
+               loading="lazy"
+               width="600"
+               height="400">
+          <div class="screenshot-label">Încărcare fișiere</div>
+        </div>
+        <div class="screenshot-card">
+          <img src="images/screenshot-2.webp"
+               alt="Procesarea extraselor bancare în Convertor Extrase Bancare"
+               loading="lazy"
+               width="600"
+               height="400">
+          <div class="screenshot-label">Conversie automată</div>
+        </div>
+        <div class="screenshot-card">
+          <img src="images/screenshot-3.webp"
+               alt="Rezultatele conversiei în format Excel pentru SAGA"
+               loading="lazy"
+               width="600"
+               height="400">
+          <div class="screenshot-label">Export Excel</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== BANKS ======== -->
+  <section class="banks">
+    <div class="container-narrow" style="margin-bottom: 0;">
+      <span class="section-label">Compatibilitate</span>
+      <h2 class="section-heading">Bănci compatibile</h2>
+      <hr class="section-rule">
+    </div>
+    <div class="container">
+      <div class="banks-grid">
+        <div class="bank-card">
+          <div class="bank-icon">BCR</div>
+          <div class="bank-name">BCR</div>
+          <div class="bank-note">Banca Comercială Română</div>
+        </div>
+        <div class="bank-card">
+          <div class="bank-icon">BT</div>
+          <div class="bank-name">Banca Transilvania</div>
+          <div class="bank-note">Extrase PDF standard</div>
+        </div>
+        <div class="bank-card">
+          <div class="bank-icon">CEC</div>
+          <div class="bank-name">CEC Bank</div>
+          <div class="bank-note">CEC Bank S.A.</div>
+        </div>
+        <div class="bank-card">
+          <div class="bank-icon">RB</div>
+          <div class="bank-name">Raiffeisen</div>
+          <div class="bank-note">Raiffeisen Bank România</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== INSTALLATION ======== -->
+  <section class="installation" id="instalare">
+    <div class="container-narrow" style="margin-bottom: 3rem;">
+      <span class="section-label">Ghid</span>
+      <h2 class="section-heading">Cum se instalează</h2>
+      <hr class="section-rule">
+    </div>
+    <div class="container">
+      <div class="install-grid">
+        <div class="install-step">
+          <div class="install-number">01</div>
+          <div class="install-title">Descărcați installerul</div>
+          <p class="install-desc">Apăsați butonul &bdquo;Descarcă gratuit&rdquo; de pe această pagină. Fișierul ConvertorExtrase-Setup.exe se va salva în folderul Downloads.</p>
+        </div>
+        <div class="install-step">
+          <div class="install-number">02</div>
+          <div class="install-title">Deblocați fișierul</div>
+          <p class="install-desc">Click dreapta pe fișierul descărcat &rarr; Proprietăți (Properties). La secțiunea &bdquo;Security&rdquo; din partea de jos, bifați &bdquo;Unblock&rdquo; &rarr; OK.</p>
+          <p class="install-note">Windows blochează automat fișierele descărcate din internet. Acest pas este necesar o singură dată.</p>
+        </div>
+        <div class="install-step">
+          <div class="install-number">03</div>
+          <div class="install-title">Rulați installerul</div>
+          <p class="install-desc">Dublu-click pe fișier și urmați pașii din wizard. Aplicația se instalează în câteva secunde și este gata de utilizare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PRICING ======== -->
+  <section class="pricing" id="pret">
+    <div class="container">
+      <div class="pricing-layout">
+        <div class="pricing-info">
+          <span class="section-label">Investiție</span>
+          <h2>Preț și licență</h2>
+          <hr class="section-rule">
+          <p class="pricing-tagline">Un singur abonament. Toate băncile incluse. Actualizări gratuite pe toată durata licenței.</p>
+          <p class="pricing-note">Descărcați aplicația și testați gratuit timp de 7 zile, fără obligații. Dacă vă este utilă, achiziționați licența anuală.</p>
+        </div>
+        <div class="price-card">
+          <div class="price-card-inner">
+            <div class="price-label">Licența anuală</div>
+            <div class="price-amount">X lei <span>/ an</span></div>
+            <div class="price-trial">7 zile gratuit</div>
+            <ul class="price-features">
+              <li>Toate cele 4 bănci incluse</li>
+              <li>Actualizări gratuite pe durata licenței</li>
+              <li>Export Excel compatibil SAGA C.3.0</li>
+              <li>Suport tehnic prin email</li>
+            </ul>
+            <a href="https://github.com/acs-soft/convertor-extrase-site/releases/latest/download/ConvertorExtrase-Setup.exe" class="btn-cta-card">Descarcă și testează gratuit</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FINAL CTA ======== -->
+  <section class="final-cta">
+    <div class="container">
+      <h2>Transformați extrasele PDF în fișiere SAGA</h2>
+      <p class="final-cta-sub">Economisiți timp. Eliminați erorile de introducere manuală.</p>
+      <a href="https://github.com/acs-soft/convertor-extrase-site/releases/latest/download/ConvertorExtrase-Setup.exe" class="btn-final">
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M8 12L3 7h3V1h4v6h3L8 12z"/><path d="M14 14H2v-2H0v4h16v-4h-2v2z"/></svg>
+        Descarcă gratuit
+      </a>
+      <div class="final-sub">Windows 10/11 &middot; 7 zile gratuit &middot; ~57 MB</div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
   <footer>
     <div class="container">
-      <div class="footer-content">
-
-        <div class="footer-company">
-          <span class="footer-brand">
-            ACS Soft
-          </span>
-          <span class="footer-copyright">
-            &copy; 2026 ACS Soft. Toate drepturile rezervate.
-          </span>
-        </div>
-
-        <div class="footer-links">
-          <a href="mailto:contact@example.com">
-            contact@example.com
-          </a>
-          <a href="#">
-            Termeni și condiții
-          </a>
-        </div>
-
+      <span class="footer-brand">ACS Soft &copy; 2026</span>
+      <div class="footer-links">
+        <a href="mailto:contact@example.com">contact@example.com</a>
+        <span class="footer-sep">&middot;</span>
+        <a href="#">Termeni și condiții</a>
       </div>
     </div>
   </footer>
