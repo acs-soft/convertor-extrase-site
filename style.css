@@ -523,31 +523,18 @@ section {
   flex-wrap: wrap;
 }
 
-.bank-chip {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-}
-
 .bank-logo {
-  height: 28px;
+  height: 48px;
   width: auto;
-  flex-shrink: 0;
   object-fit: contain;
 }
 
 .bank-logo--tall {
-  height: 32px;
+  height: 64px;
 }
 
 .bank-logo--wide {
-  height: 24px;
-}
-
-.bank-label {
-  font-size: 0.78rem;
-  color: var(--text-secondary);
-  white-space: nowrap;
+  height: 48px;
 }
 
 /* ============================================================
@@ -1054,16 +1041,12 @@ button:focus-visible {
     gap: 1rem 1.5rem;
   }
 
-  .bank-label {
-    display: none;
-  }
-
   .bank-logo {
-    height: 24px;
+    height: 36px;
   }
 
   .bank-logo--tall {
-    height: 28px;
+    height: 48px;
   }
 
   nav .container {
