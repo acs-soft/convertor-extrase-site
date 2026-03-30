@@ -318,7 +318,7 @@ nav .container {
    SECTION STRUCTURE
    ============================================================ */
 section {
-  padding: 6rem 0;
+  padding: 4rem 0;
 }
 
 .section-label {
@@ -342,7 +342,7 @@ section {
   width: 50px;
   height: 3px;
   background: var(--taxi-yellow);
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
   border: none;
 }
 
@@ -361,7 +361,7 @@ section {
 }
 
 .step-block {
-  padding: 2.5rem;
+  padding: 1.8rem 2rem;
   position: relative;
   border-right: 1px solid var(--border);
 }
@@ -372,11 +372,11 @@ section {
 
 .step-number {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: var(--concrete-200);
   line-height: 1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .step-block:hover .step-number {
@@ -422,7 +422,7 @@ section {
    ============================================================ */
 .screenshots {
   background: var(--concrete-900);
-  padding: 5rem 0;
+  padding: 3.5rem 0;
   position: relative;
 }
 
@@ -497,72 +497,48 @@ section {
 }
 
 /* ============================================================
-   BANKS
+   BANKS — Compact strip with logos
    ============================================================ */
 .banks {
   background: var(--surface-elevated);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
+  padding: 2.5rem 0;
 }
 
-.banks-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-}
-
-.bank-card {
+.banks-header {
   text-align: center;
-  padding: 3rem 1.5rem;
-  border-right: 1px solid var(--border);
-  position: relative;
-  transition: background 0.3s ease;
+  margin-bottom: 1.5rem;
 }
 
-.bank-card:last-child {
-  border-right: none;
+.banks-header .section-heading {
+  margin-bottom: 0;
 }
 
-.bank-card:hover {
-  background: var(--surface);
+.banks-strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
 }
 
-.bank-icon {
-  width: 48px;
-  height: 48px;
-  margin: 0 auto 1.2rem;
+.bank-chip {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  color: var(--steel-blue);
+  gap: 0.7rem;
 }
 
-.bank-card:hover .bank-icon {
-  border-color: var(--steel-blue);
-  color: var(--surface);
-  background: var(--steel-blue);
-  transition: all 0.25s ease;
+.bank-logo {
+  width: 56px;
+  height: 22px;
+  flex-shrink: 0;
 }
 
-.bank-name {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-primary);
-  margin-bottom: 0.4rem;
-}
-
-.bank-note {
-  font-size: 0.75rem;
-  color: var(--text-tertiary);
+.bank-label {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
 }
 
 /* ============================================================
@@ -580,7 +556,7 @@ section {
 }
 
 .install-step {
-  padding: 2.5rem;
+  padding: 1.8rem 2rem;
   position: relative;
   border-right: 1px solid var(--border);
 }
@@ -591,11 +567,11 @@ section {
 
 .install-number {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: var(--concrete-200);
   line-height: 1;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.8rem;
 }
 
 .install-title {
@@ -711,6 +687,12 @@ section {
   letter-spacing: 0.04em;
 }
 
+.price-monthly {
+  font-size: 0.82rem;
+  color: var(--concrete-400);
+  margin-bottom: 1.2rem;
+}
+
 .price-trial {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 0.8rem;
@@ -718,8 +700,8 @@ section {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--glass-teal);
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -774,7 +756,7 @@ section {
   background: var(--steel-blue);
   color: #fff;
   text-align: center;
-  padding: 5rem 0;
+  padding: 3.5rem 0;
   position: relative;
   overflow: hidden;
 }
@@ -973,7 +955,15 @@ button:focus-visible {
   }
 
   section {
-    padding: 4.5rem 0;
+    padding: 3.5rem 0;
+  }
+
+  .banks {
+    padding: 2rem 0;
+  }
+
+  .banks-strip {
+    gap: 1.5rem;
   }
 
   .hero {
@@ -994,7 +984,7 @@ button:focus-visible {
   .install-step {
     border-right: none;
     border-bottom: 1px solid var(--border);
-    padding: 2rem 2.5rem;
+    padding: 1.5rem 2rem;
   }
 
   .step-block:last-child,
@@ -1016,23 +1006,6 @@ button:focus-visible {
     grid-column: 1 / -1;
     max-width: 50%;
     margin: 0 auto;
-  }
-
-  .banks-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .bank-card {
-    border-bottom: 1px solid var(--border);
-  }
-
-  .bank-card:nth-child(2) {
-    border-right: none;
-  }
-
-  .bank-card:nth-child(3),
-  .bank-card:nth-child(4) {
-    border-bottom: none;
   }
 
   .section-heading {
@@ -1061,7 +1034,24 @@ button:focus-visible {
   }
 
   section {
-    padding: 3.5rem 0;
+    padding: 3rem 0;
+  }
+
+  .banks {
+    padding: 1.5rem 0;
+  }
+
+  .banks-strip {
+    gap: 1rem 1.5rem;
+  }
+
+  .bank-label {
+    display: none;
+  }
+
+  .bank-logo {
+    width: 64px;
+    height: 26px;
   }
 
   nav .container {
@@ -1112,23 +1102,6 @@ button:focus-visible {
     max-width: 100%;
   }
 
-  .banks-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .bank-card {
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .bank-card:last-child {
-    border-bottom: none;
-  }
-
-  .bank-card:nth-child(2) {
-    border-right: none;
-  }
-
   .step-block,
   .install-step {
     padding: 1.5rem;
@@ -1139,7 +1112,7 @@ button:focus-visible {
   }
 
   .final-cta {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 
   .final-cta h2 {
