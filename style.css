@@ -530,9 +530,18 @@ section {
 }
 
 .bank-logo {
-  width: 56px;
-  height: 22px;
+  height: 28px;
+  width: auto;
   flex-shrink: 0;
+  object-fit: contain;
+}
+
+.bank-logo--tall {
+  height: 32px;
+}
+
+.bank-logo--wide {
+  height: 24px;
 }
 
 .bank-label {
@@ -1050,8 +1059,11 @@ button:focus-visible {
   }
 
   .bank-logo {
-    width: 64px;
-    height: 26px;
+    height: 24px;
+  }
+
+  .bank-logo--tall {
+    height: 28px;
   }
 
   nav .container {
